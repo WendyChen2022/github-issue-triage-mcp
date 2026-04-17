@@ -106,7 +106,7 @@ Returns a Markdown document containing:
 ### 1. Clone and install dependencies
 
 ```bash
-git clone https://github.com/your-username/github-issue-triage-mcp
+git clone https://github.com/WendyChen2022/github-issue-triage-mcp
 cd github-issue-triage-mcp
 uv sync
 ```
@@ -145,7 +145,7 @@ Add this to your `claude_desktop_config.json`:
       "command": "uv",
       "args": [
         "--directory",
-        "/absolute/path/to/github-issue-triage-mcp",
+        "C:\\Users\\ChenH\\Desktop\\Claude\\claudegithub-issue-triage-mcp",
         "run",
         "github-issue-triage-mcp"
       ],
