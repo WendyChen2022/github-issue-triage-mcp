@@ -1,0 +1,28 @@
+[project]
+name = "github-issue-triage-mcp"
+version = "0.1.0"
+description = "MCP server for automated GitHub issue triage using Claude AI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "anthropic>=0.49.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+github-issue-triage-mcp = "github_issue_triage_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/github_issue_triage_mcp"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
